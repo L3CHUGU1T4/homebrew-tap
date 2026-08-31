@@ -1,18 +1,19 @@
 class Vex < Formula
   desc "Terminal text editor with syntax highlighting for 17 languages"
-  homepage "https://github.com/L3CHUGU1T4/vex"
-  url "https://github.com/L3CHUGU1T4/vex/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "6b23b35cd3a951f4e004664872af41ee260b8396ff34cdad6ad8c1d16704d48f"
-  license "MIT"
+    homepage "https://github.com/L3CHUGU1T4/vex"
+      url "https://github.com/L3CHUGU1T4/vex/archive/refs/tags/v1.0.2.tar.gz"
+        sha256 "24198751f5a849fdf42df087e2bf07608e2a5ca7bcbb3c61c159d273c2d3be4c"
+          license "MIT"
           
-  depends_on "make"
+            depends_on "make"
             
-  def install
-    system "make", "CXX=#{ENV.cxx}"
-    bin.install "build/vex"
-  end
-                        
-  test do
-    assert_match "vex", shell_output("#{bin}/vex --help", 0)
-  end
-end
+              def install
+                  rm_rf "build"
+                      system "make", "CXX=#{ENV.cxx}"
+                          bin.install "build/vex"
+                            end
+                            
+                              test do
+                                  assert_match "vex", shell_output("#{bin}/vex --help", 0)
+                                    end
+                                    end
