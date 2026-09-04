@@ -2,7 +2,7 @@ class Vex < Formula
   desc "Terminal text editor with syntax highlighting for 17 languages"
     homepage "https://github.com/L3CHUGU1T4/vex"
       url "https://github.com/L3CHUGU1T4/vex/archive/refs/tags/v1.0.3.tar.gz"
-        sha256 "8b12be1f20d9845bfc29544a9454b6e9d4e754884705c236955fc254eb8980fb"
+        sha256 "02594c602e339cfe18c0c0857995e3a4f0dfaadc70da9eba2615d1c4bb2a8381"
           license "MIT"
           
             depends_on "make"
